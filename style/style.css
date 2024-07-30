@@ -195,7 +195,7 @@ header{
     display: flex;
 }
 .common-btn{
-    width: 47%;
+    width: 35%;
 }
 /* change habit */
 
@@ -245,6 +245,9 @@ header{
 /* responsive */
 /* mobile device */
 @media screen and (max-width:576px) {
+    .nav-list{
+        border: none;
+    }
     .habit-card{
         flex-direction: column;
     }
@@ -263,8 +266,9 @@ header{
         margin: 0 auto;
     }
     .common-btn{
-        font-size: 18px;
-        padding: 12px 5px;
+        width: 42%;
+        font-size: 16px;
+        padding: 12px 0px;
     }
     header{
         margin: 20px 10px;
