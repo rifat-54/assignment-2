@@ -120,15 +120,16 @@ header{
     flex-direction: column;
     justify-content: center;
     gap: 5px;
-    position: relative;
-    top: -360px;
-    left: 180px;
+    position:absolute;
+    top: 18%;
+    right:3%;
 }
 
 #transparret-sedond{
-    position: relative;
-    top: -220px;
-    right: 80px;
+    position:absolute;
+    bottom: 25%;
+    right:70%;
+    width: 50%;
 }
 .image-vedio{
     display: flex;
@@ -145,6 +146,7 @@ header{
 }
 .banner-image{
     margin-right: 40px;
+    position: relative;
 }
 .transparret-text h3{
     font-size: 24px;
@@ -189,9 +191,19 @@ header{
 .banner-content{
     max-width: 590px;
 }
+.banner-btn{
+    display: flex;
+}
+.common-btn{
+    width: 47%;
+}
 /* responsive */
 /* mobile device */
 @media screen and (max-width:576px) {
+    .common-btn{
+        font-size: 18px;
+        padding: 12px 5px;
+    }
     header{
         margin: 20px 10px;
     }
@@ -210,6 +222,7 @@ header{
     }
     .banner-image{
         margin: 0;
+        
     }
     .banner-image img{
         width: 100%;
@@ -217,14 +230,17 @@ header{
     
 #transfarret-first{
    
-    top: -710px;
-    left: 260px;
+    top: 10%;
+    right: 5%;
 }
 
 #transparret-sedond{
     
-    top: -530px;
-    right: -16px;
+    top:45%;
+    right:48%;
+}
+.banner-title{
+    font-size: 48px;
 }
 
 }
