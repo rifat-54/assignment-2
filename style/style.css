@@ -238,6 +238,49 @@ header{
     text-align: center;
 }
 
+/* run extra section */
+.run-common{
+    width: 45%;
+}
+.run-extra{
+    display: flex;
+    margin: 10px 100px;
+    padding: 25px 50px;
+    justify-content: space-between;
+    align-items: center;
+    /* gap: 45px; */
+    border-radius: 18px;
+    background: rgb(34, 34, 34);
+}
+.run-image img{
+    width: 100%;
+    border-radius: 15px;
+}
+.run-title{
+    font-size: 48px;
+    font-weight: 700;
+}
+.run-description{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+    margin: 20px 0;
+}
+.run-btn{
+    font-size: 18px;
+    font-weight: 600;
+    background-color: rgb(230, 83, 60);
+    padding: 15px 40px;
+    color: white;
+    border-radius: 46px;
+    border: none;
+}
+
+
+
+
+
+
+
 
 
 
@@ -245,6 +288,15 @@ header{
 /* responsive */
 /* mobile device */
 @media screen and (max-width:576px) {
+    .run-common{
+        width: 100%;
+    }
+    .run-extra{
+        flex-direction: column;
+        margin: 10px 14px;
+        padding: 25px;
+        gap: 40px;
+    }
     .nav-list{
         border: none;
     }
@@ -314,6 +366,13 @@ header{
 
 /* teblet device */
 @media screen and (min-width:577px) and (max-width:992px) {
+    .run-title{
+        font-size: 36px;
+        font-weight: 600;
+    }
+    .run-extra{
+        margin: 16px 20px;
+    }
     .habit-card{
         display: grid;
         grid-template-columns: repeat(2,1fr);
