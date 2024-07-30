@@ -170,7 +170,7 @@ header{
     justify-content: space-between;
     /* align-items: center; */
     margin: 40px 100px;
-    gap: 30px;
+    gap: 45px;
     background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
 }
 .banner-title{
@@ -197,9 +197,71 @@ header{
 .common-btn{
     width: 47%;
 }
+/* change habit */
+
+.change-habit{
+    margin: 140px 100px;
+    text-align: center;
+}
+.habit-card{
+    display: flex;
+    margin: 70px auto;
+}
+
+.habit-title{
+    font-size: 48px;
+    margin: 20px auto;
+}
+
+.habit-description,.card-description{
+    font-size: 14px;
+    color: rgba(255, 255, 255, 0.5);
+}
+.card-description{
+    width: 80%;
+    /* text-align: center; */
+}
+.image-container{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+.image-container img{
+    width: 180px;
+    height: 180px;
+    border-radius: 50%;
+}
+
+.card-title{
+    margin: 30px auto;
+    text-align: center;
+}
+
+
+
+
+
 /* responsive */
 /* mobile device */
 @media screen and (max-width:576px) {
+    .habit-card{
+        flex-direction: column;
+    }
+    .change-habit{
+        margin: 140px 10px;
+    }
+    .image-container{
+        margin-top: 50px;
+    }
+    .card-description{
+        width: 68%;
+        
+    }
+    .habit-description{
+        width: 80%;
+        margin: 0 auto;
+    }
     .common-btn{
         font-size: 18px;
         padding: 12px 5px;
@@ -248,6 +310,20 @@ header{
 
 /* teblet device */
 @media screen and (min-width:577px) and (max-width:992px) {
+    .habit-card{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        gap: 42px;
+    }
+    .banner-image {
+        margin-right: 0px;
+        margin-left: 40px;
+    }
+    .banner{
+        flex-direction: column;
+        margin: 40px 15px;
+        align-items: center;
+    }
     header{
         margin: 36px 24px;
     }
