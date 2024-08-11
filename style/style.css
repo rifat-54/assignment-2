@@ -4,6 +4,7 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Tangerine:wght@400;700&display=swap');
 
+@import url('https://fonts.cdnfonts.com/css/miama');
 
 *{
     margin: 0;
@@ -188,9 +189,9 @@ header{
 }
 .banner-shape{
     font-size:78px;
-    /* font-family: "Tangerine", cursive; */
-    font-family: "Tangerine", cursive;
-    font-weight: 700;
+   
+    font-family: 'Miama', sans-serif;
+    font-weight:400;
 }
 .banner-description{
     color: rgba(255, 255, 255, 0.5);
